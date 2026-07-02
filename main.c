@@ -43,8 +43,6 @@ void loadConfig() {} //Use this for custom configs later
 
 
 
-
-
 void setState(void) {
 
     int life = scePowerGetBatteryLifePercent();
