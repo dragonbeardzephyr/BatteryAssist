@@ -39,7 +39,7 @@ volatile int running = 0;
 
 SceUID thid = -1; // Thread ID for the main thread
 
-void loadConfig() {} //Use this for custom configs later
+void loadConfig() {} // Use this for custom configs later
 
 
 
@@ -84,7 +84,7 @@ void response(enum powerState state) {
             // Normal operation, no LED changes needed
             break;
         case OnLow:
-            flashPowerLED(); // Bllink the power LED to indicate low battery
+            flashPowerLED(); // Blink the power LED to indicate low battery
             break;
          case OnChargingFull:
             //sceSysconCtrlLED(POWER_LED, blinkState ? LED_ON : LED_OFF);
@@ -93,7 +93,7 @@ void response(enum powerState state) {
             //sceSysconCtrlLED(POWER_LED, blinkState ? LED_ON : LED_OFF);
             break;
         case OnChargingLow:
-            // 
+            // ?
             break;
     }
 } 
@@ -153,8 +153,4 @@ int module_stop(SceSize args, void *argp) {
 
     return 0;
 }
-
-
-
-
 
